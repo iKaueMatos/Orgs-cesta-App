@@ -1,30 +1,40 @@
 import React from 'react';
-import { Image,StyleSheet,Text, View} from 'react-native';
+import { Image,StyleSheet,Text, View,TouchableOpacity} from 'react-native';
 
 import Texto from '../componentes/texto';
-import logofazenda from '../../../../assets/logo.png';
 
-export default function Detalhes(){
-<>
-<Text style={estilos.nome}>Cesta de Verduras</Text>
+
+export default function Detalhes({nome, logoFazenda,nomeFazenda,descrição,preço,botao}){
+return <>
+<Text style={estilos.nome}>{nome}</Text>
+
 
 <View syle={estilos.imagemFazenda}>
-    <Image source={logofazenda} style={estilos.logofazenda}/>
-<Text style={estilos.nomeFazenda}>Jenny jack Farm</Text>
+<Image source={logoFazenda} style={estilos.logofazenda}/>
+<Text style={estilos.nomeFazenda}>{nomeFazenda}</Text>
 </View>
 
 
-<Texto style={estilos.descrição}>Uma cesta com produtos adicionados 
-    cuidasamente da fazenda direto para sua
-     cozinha</Texto>
-    <Text style={estilos.preço}>R$ 40,00</Text> 
-
+<Texto style={estilos.descrição}>{descrição}</Texto>
+     
+    <Text style={estilos.preço}>{preço}</Text> 
+    
+<TouchableOpacity style={estilos.botao}>
+    <Texto style={estilos.textoBotao}> {botao}</Texto>
+   </TouchableOpacity>
 </>
 }
 
 const estilos = StyleSheet.create({
 
 /*estilo do cesta de verduras*/
+
+cesta:{
+    paddingVertical:8,
+    paddingHorizontal:16,
+},
+
+
 nome:{
     fontSize:26,
     lineHeight:42,
@@ -33,18 +43,19 @@ nome:{
     
 },
 
-imagemFazenda:{
+logofazenda:{
     
     flexDirection:"row",
     paddingVertical:16,
+    
     
 
     
 },
 
 logofazenda:{
-    width:32,
-    height:32,
+    width:22,
+    height:22,
     
 },
 nomeFazenda:{
@@ -66,7 +77,25 @@ preço:{
     fontSize:26,
     lineHeight:42,
     marginTop:8,
-}
+},
+botao:{
+    marginTop:16,
+    backgroundColor:"#2a9f85",
+    paddingVertical:16,
+    borderRadius:6,
+    
+},
+
+textoBotao:{
+    
+    textAlign:"center",
+    color:"#FFF",
+    fontSize:16,
+    lineHeight:26,
+    fontWeight:"bold",
+},
+
+
 
 
 })

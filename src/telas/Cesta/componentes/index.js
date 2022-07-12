@@ -9,12 +9,13 @@ import Detalhes from '../componentes/detalhes';
 /*fim*/
 
 
-export default function Cesta () {
+export default function Cesta ({topo,detalhes}) {
     /*<> Fragmento*/
     return <>
-    <Topo/>
-    <Detalhes/>
-<View style={estilos.cesta}>
+    <Topo {...Topo}/>
+    <View style={estilos.cesta}>
+    <Detalhes {...detalhes}/>
+
 </View>
 
     </>
