@@ -1,5 +1,16 @@
 
+Resumo do projeto:
 
+🔨 Funcionalidades do projeto:
+
+Funcionalidade 1:Animação do botão no após clicar 
+
+Funcionalidade 2:exbição dos Produtos comprados 
+
+
+✔️ Técnicas e tecnologias utilizadas:JSX = Javascript & CSS3,Bliblioteca do google fonts e Expo para compartilhamento via Ip para tela do dispositivo mobile. 
+
+📁 Acesso ao projeto Você pode acessar os arquivos do projeto clicando aqui:https://expo.dev/@kauematos/projeto-orgs
 
 
 
