@@ -1,23 +1,2 @@
-Resumo do projeto:
+Projeto beta 2 em deenvolvimento
 
-
-🔨 Funcionalidades do projeto:
-
-Funcionalidade 1:
-
-Funcionalidade 2:
-
-Funcionalidade 3:
-
-Funcionalidade 4:
-
-Funcionalidade 5:
-
-
-✔️ Técnicas e tecnologias utilizadas:React Native,Java script,CSS
-
-
-
-
-📁 Acesso ao projeto
-Você pode acessar os arquivos do projeto clicando aqui.
