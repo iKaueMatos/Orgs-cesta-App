@@ -1,5 +1,5 @@
 
-![](https://img.shields.io/github/license/nataliakt/alura-react-native-comecando-do-zero)
+
 
 
 
